@@ -1,0 +1,28 @@
+{
+  "compilerOptions": {
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "rootDirs": ["src", "test"],
+    "strictNullChecks": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "allowSyntheticDefaultImports": true,
+    "baseUrl": ".",
+    "paths": {
+      "@/test/*": ["test/*"],
+      "@/*": ["src/*"]
+    },
+    "module": "commonjs",
+    "target": "ES6",
+    "declaration": true,
+    "outDir": "./build",
+    "lib": [
+      "es2019"
+    ]
+  },
+  "exclude": ["dist", "build"],
+  "include": [
+    "src",
+    "test",
+  ]
+}
