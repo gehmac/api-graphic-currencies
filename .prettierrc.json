@@ -2,5 +2,11 @@
     "singleQuote": true,
     "printWidth": 80,
     "trailingComma": "all",
-    "endOfLine": "lf"
+    "eslintIntegration": true,
+    "stylelintIntegration": true,
+    "tabWidth": 2,
+    "semi": false,
+    "endOfLine": "auto",
+    "bracketSpacing": true
+
 }
