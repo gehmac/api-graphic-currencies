@@ -2,7 +2,10 @@
   "name": "api-graphic-currencies",
   "version": "1.0.0",
   "description": "",
-  "main": "build/main.js",
+  "main": "build/main/main.js",
+  "engines": {
+    "node": "16"
+  },
   "scripts": {
     "prebuild": "rimraf build",
     "build": " tsc -p tsconfig.build.json",
