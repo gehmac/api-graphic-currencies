@@ -16,13 +16,18 @@
   },
   "extends": [
     "plugin:@typescript-eslint/recommended",
-    "plugin:prettier/recommended",
     "plugin:@typescript-eslint/eslint-recommended",
-    "plugin:@typescript-eslint/recommended",
+    "plugin:prettier/recommended",
     "prettier"
   ],
   "rules": {
-    "prettier/prettier": 2,
+    "prettier/prettier": [
+      "error",
+      {
+        "endOfLine": "auto"
+      }
+    ],
+    "semi": [1, "any"],
     "@typescript-eslint/member-delimiter-style": ["error"],
     "@typescript-eslint/semi": ["error"],
     "no-async-promise-executor": "off",

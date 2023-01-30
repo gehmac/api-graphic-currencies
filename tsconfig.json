@@ -28,6 +28,10 @@
     "forceConsistentCasingInFileNames": false,
     "noFallthroughCasesInSwitch": false
   },
+  "multiline": {
+    "delimiter": "semi",
+    "requireLast": false
+  },
   "exclude": [
     "dist",
     "build"
