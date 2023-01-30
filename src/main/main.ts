@@ -4,8 +4,8 @@ import {
   ExpressAdapter,
   NestExpressApplication,
 } from '@nestjs/platform-express';
-import { AppModule } from '@/main/app.module';
 import process from 'process';
+import { AppModule } from './app.module';
 
 let app: INestApplication;
 
@@ -39,5 +39,5 @@ async function getApp(): Promise<INestApplication> {
 }
 
 getApp()
-  .then(async (main) => await main.listen(String(process.env.APP_PORT) || 3001)
+  .then(async (main) => await main.listen(process.env.APP_PORT || 3001)
   .catch(console.error));
